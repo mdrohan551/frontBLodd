@@ -1,0 +1,891 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Lato, sans-serif;
+}
+
+/*nav*/
+.main_menu .logo {
+    padding: 1px 0;
+
+}
+
+.main_menu ul li {
+    font-weight: 600;
+}
+
+.main_menu ul li:hover .nav-link {
+    color: orange !important;
+}
+
+
+
+.main_menu {
+    transition: all linear .3s;
+
+
+}
+
+.main_menu.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #10728d !important;
+    z-index: 1000;
+}
+
+.main_menu.scrolled .nav-link {
+    color: white !important;
+    font-weight: 600;
+
+}
+
+
+/*nav*/
+.registration-form {
+    padding: 50px 0;
+    margin-top: 5%;
+}
+
+.blood {
+    font-size: 2rem;
+    padding-left: 5px;
+}
+
+.registration-form form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 12px 48px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon {
+    text-align: center;
+
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 3px solid black;
+    margin-bottom: 50px;
+    line-height: 100px;
+    background: #e3e3e3;
+}
+
+.registration-form .item {
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .registration-form form {
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+
+.shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+    0% {
+        transform: scaleX(1.5);
+    }
+
+    40% {
+        transform: scaleX(1);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scaleX(.2);
+        opacity: .4;
+    }
+}
+
+.shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+}
+
+.shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+}
+
+.bloodIcon {
+    width: 20px !important;
+    height: 30px !important;
+    display: inline-block;
+}
+
+P {
+    display: inline-block;
+}
+
+
+.banner {
+    background: #dfe9ff;
+    padding: 252px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 450px;
+        margin-bottom: 32px;
+    }
+}
+
+.NOTverify {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    font-size: 1.5rem !important;
+
+}
+
+.banner .banner-image {
+    position: absolute;
+    opacity: 0.25;
+    right: 10%;
+    top: 10%;
+    height: 300px;
+    z-index: -1;
+
+}
+
+@media (min-width: 768px) {
+    .banner .banner-image {
+        height: 400px;
+        top: 0px;
+        opacity: 0.5;
+        padding: 50px 0;
+    }
+}
+@media (min-width: 320px) and (max-width:761px){
+    .banner {
+        height: 20px;
+        top: 0px;
+        padding: 150px 0;
+    }
+    .banner .banner-text h1 span {
+        color: #00106a;
+        font-size:1.5rem !important;
+        font-weight: 0px;
+        margin-bottom: 1rem;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    
+    
+}
+
+@media (min-width: 992px) {
+    .banner .banner-image {
+        height: 500px;
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+.banner .banner-text {
+    max-width: 550px;
+    float: left;
+}
+
+.banner .banner-text h1 {
+    color: #f31d1d;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+
+}
+
+.banner .banner-text h1 span {
+    color: #00106a;
+    font-size:2.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.banner .banner-text p {
+    color: #00106a;
+    font-size: 1.05rem;
+    padding-bottom: 2rem;
+    font-weight: 900;
+    letter-spacing: normal;
+}
+
+.banner .button {
+    border: 0;
+    border-radius: 50px;
+    padding: 0.75rem 2.75rem;
+    background: #f31d1d;
+    color: #ffffff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.banner .button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+/* From Uiverse.io by Yaya12085 */
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color: #fceeee;
+    color: #697e91;
+    max-width:100%;
+
+
+}
+
+.plan strong {
+    font-weight: 600;
+    color: #425275;
+}
+
+.plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f8a1a1;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #425475;
+}
+
+.plan .pricing small {
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+}
+
+.plan .title+* {
+    margin-top: 0.75rem;
+}
+
+.plan .info+* {
+    margin-top: 1rem;
+}
+
+.plan .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan .features li+* {
+    margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.plan .features+* {
+    margin-top: 1.25rem;
+}
+
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.plan .button {
+    background-color: #d5214a;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+}
+
+
+.plan .button.disabled {
+    background-color: #3b3b3b;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+    opacity: 30%;
+}
+
+.plan .button.disabled:hover {
+    background-color: #3b3b3b;
+}
+
+
+.plan .button:hover, .plan .button:focus {
+    background-color: #4133B7;
+}
+
+
+/*loading css*/
+.my-event-placeholder {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px 0;
+    width: 100%;
+    min-height: 160px;
+    max-width: 460px;
+    background: #fafafa;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.my-event-placeholder__container:after, .my-event-placeholder__container:before, .my-event-placeholder__footer:after, .my-event-placeholder__footer:before {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.my-event-placeholder-radius {
+    border-radius: 4px;
+}
+
+.my-event-placeholder__poster, .my-event-placeholder__content, .my-event-placeholder__content__address, .my-event-placeholder__content__action, .my-event-placeholder__footer__item {
+    float: left;
+}
+
+.my-event-placeholder__poster {
+    width: 80px;
+    height: 110px;
+    margin: 0 20px 0 0;
+}
+
+.my-event-placeholder__content {
+    width: calc(100% - 100px);
+    padding: 5px 10px 5px 5px;
+}
+
+.my-event-placeholder__content__title {
+    height: 30px;
+}
+
+.my-event-placeholder__content__description, .my-event-placeholder__content__address, .my-event-placeholder__content__action {
+    height: 20px;
+}
+
+.my-event-placeholder__content__description {
+    margin: 20px 0 15px;
+}
+
+.my-event-placeholder__content__address {
+    width: calc(100% - 130px);
+}
+
+.my-event-placeholder__content__action {
+    width: 110px;
+    margin: 0 0 0 20px;
+    border-radius: 20px;
+}
+
+.my-event-placeholder__footer {
+    padding: 7.5px 10px;
+    margin: 5px -10px 0;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.my-event-placeholder__footer__item {
+    margin: 0 10px;
+    height: 15px;
+    width: calc(25% - 20px);
+    opacity: 0.25;
+}
+
+.bg-color-animated {
+    background: linear-gradient(290deg, #D4D7D9, #f8f8f8);
+    background-size: 500% 500%;
+    animation: bgColorAnimated 1s ease infinite;
+}
+
+@keyframes bgColorAnimated {
+    0% {
+        background-position: 0% 15%;
+    }
+
+    50% {
+        background-position: 50% 65%;
+    }
+
+    100% {
+        background-position: 0% 15%;
+    }
+}
+
+/*loading css*/
+
+
+.inputBox,
+.inputBox1 {
+    position: relative;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.inputBox input,
+.inputBox1 input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+}
+
+.enter:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+    border-radius: 8px;
+    padding: 10px;
+}
+.veryfiedIcon {
+    margin-right: 5px;
+    font-size: 15px;
+
+}
+
+
+/*blood grupe page*/
+/* From Uiverse.io by pandey_saurav_ */
+.form-container {
+    width: 500px;
+    max-width: 500px;
+
+    background-color: #fff;
+    padding: 100px 15px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084),
+        0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .logo-container {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #1778f2;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: #fff;
+    background-color: #212121;
+    border: none;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin: 12px 0;
+
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084),
+        0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #313131;
+}
+
+.form-container .link {
+    color: #1778f2;
+    text-decoration: none;
+}
+
+.form-container .signup-link {
+    align-self: center;
+    font-weight: 500;
+}
+
+.form-container .signup-link .link {
+    font-weight: 400;
+}
+
+.form-container .link:hover {
+    text-decoration: underline;
+}
+
+/* Add the rest of your CSS rules as needed */
+
+/*blood grupe page*/
+
+/*Footer part*/
+:root {
+    /* Colors */
+    --primary-bg: #333333;
+    --text-light: #e4e4e4;
+    --text-muted: #bdbdbd;
+    --accent: #00cccc;
+
+    /* Fonts */
+    --font-heading: "Bodoni Moda", serif;
+    --font-body: "Raleway", sans-serif;
+
+    /* Font sizes */
+    --text-xl: 1.5rem;
+    --text-base: 1rem;
+    --text-sm: 0.875rem;
+
+    /* Spacing */
+    --spacing-xl: 50px;
+    --spacing-lg: 40px;
+    --spacing-md: 20px;
+    --spacing-sm: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: var(--font-body), sans-serif;
+}
+
+.footer-title-wrapper {
+    margin-top: var(--spacing-lg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.line {
+    height: 1px;
+    background-color: var(--primary-bg);
+    flex: 1;
+}
+
+.title {
+    font-family: var(--font-heading), serif;
+    color: var(--primary-bg);
+    white-space: nowrap;
+    font-size: var(--text-xl);
+}
+
+.footer {
+    width: 100vw;
+    background-color: var(--primary-bg);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-xl);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.footer-heading {
+    color: var(--text-light);
+    font-family: var(--font-heading), serif;
+    font-size: var(--text-base);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--text-sm);
+    font-family: var(--font-body), sans-serif;
+}
+
+.footer-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-md);
+    }
+
+    .footer-title-container {
+        width: 90%;
+    }
+}
